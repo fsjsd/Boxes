@@ -4,10 +4,7 @@ import { addBox, removeBox, moveBox, resizeBox } from "../actions/boxActions";
 
 const boxesReducer = createReducer([], {
   [addBox]: (state, action) => {
-    state.push({
-      ...action.payload,
-      zOrder: state.length + 1 // zOrder set based on array length to place on top!
-    });
+    state.push(action.payload); // note state change here - redux-starter-kit ships with immer to allow mutable code
     return state;
   },
   [removeBox]: (state, action) => {

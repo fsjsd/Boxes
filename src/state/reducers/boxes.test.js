@@ -15,24 +15,22 @@ describe("boxes reducer", () => {
         type: actions.addBox.type,
         payload: { id: "newboxid" }
       })
-    ).toEqual([{ id: "newboxid", zOrder: 1 }]);
+    ).toEqual([{ id: "newboxid" }]);
   });
 
-  it("should handle ADD_BOX and set zOrder based on existing boxes", () => {
+  it("should handle ADD_BOX", () => {
     // new box added to existing state
     expect(
-      boxesReducer([{ id: "newboxid", zOrder: 1 }], {
+      boxesReducer([{ id: "newboxid" }], {
         type: actions.addBox.type,
         payload: { id: "newboxid2" }
       })
     ).toEqual([
       {
-        id: "newboxid",
-        zOrder: 1
+        id: "newboxid"
       },
       {
-        id: "newboxid2",
-        zOrder: 2
+        id: "newboxid2"
       }
     ]);
   });
