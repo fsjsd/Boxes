@@ -1,5 +1,3 @@
-Spitfire Technical Interview
-
 What we're interested in:
 
 - Simplicity
