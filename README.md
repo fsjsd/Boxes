@@ -1,4 +1,4 @@
-# Spitfire boxes
+# Boxes
 
 - Built with React 16.9, function components + hooks throughout
 - Latest react-redux hooks bindings (useDispatch, useSelector)
