@@ -52,9 +52,9 @@ describe("Box component", () => {
     const { container } = render(
       <Box
         boxSpec={boxSpecFactory()}
-        onMouseWheel={handleMouseWheel}
         onClick={() => {}}
         onDragged={() => {}}
+        onMouseWheel={handleMouseWheel}
       />
     );
     const box = container.firstChild;

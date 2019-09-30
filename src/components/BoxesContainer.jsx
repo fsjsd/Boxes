@@ -8,8 +8,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { removeBox, moveBox, resizeBox } from "../state/actions/boxActions";
 
 export default function BoxesContainer() {
-  const boxes = useSelector(state => state.boxes.present);
   const dispatch = useDispatch();
+  const boxes = useSelector(state => state.boxes.present);
 
   // Note: <BoxForm>'s zIndex is derived from array length of boxes
   // to keep it on top

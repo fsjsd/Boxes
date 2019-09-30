@@ -4,10 +4,12 @@ import { ActionCreators as UndoActionCreators } from "redux-undo";
 
 function UndoRedo() {
   const dispatch = useDispatch();
+
   const { canUndo, canRedo } = useSelector(state => ({
     canUndo: state.boxes.past.length > 0,
     canRedo: state.boxes.future.length > 0
   }));
+
   return (
     <div>
       <button
