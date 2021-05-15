@@ -20,7 +20,7 @@
     "uuid": "^3.3.3"
   },
   "devDependencies": {
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "2.13.9"
   },
   "scripts": {
     "start": "react-scripts start",
