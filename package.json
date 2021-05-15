@@ -16,7 +16,7 @@
     "redux-starter-kit": "^0.6.3",
     "redux-thunk": "^2.3.0",
     "redux-undo": "^1.0.0-beta9-9-7",
-    "styled-components": "^4.3.2",
+    "styled-components": "5.3.0",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
